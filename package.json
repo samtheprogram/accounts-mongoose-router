@@ -4,8 +4,12 @@
   "description": "A simple API to manage one's accounts",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Samuel Moore <sam@paradigmpost.com>",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
