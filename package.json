@@ -1,0 +1,11 @@
+{
+  "name": "accounts",
+  "version": "0.1.0",
+  "description": "A simple API to manage one's accounts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samuel Moore <sam@paradigmpost.com>",
+  "license": "BSD-2-Clause"
+}
