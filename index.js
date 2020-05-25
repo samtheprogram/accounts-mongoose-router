@@ -1,6 +1,8 @@
+const bodyParser = require('body-parser');
 const express = require('express');
 
 const app = express();
+app.use(bodyParser.json());
 
 app.get('/', (_, res) => {
   res.send('Hello, world!').status(200).end();
