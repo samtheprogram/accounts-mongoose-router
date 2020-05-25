@@ -4,6 +4,7 @@
   "description": "A simple API to manage one's accounts",
   "main": "index.js",
   "scripts": {
+    "check": "npm run lint && npm run test",
     "lint": "./node_modules/eslint/bin/eslint.js --config ./.eslintrc.js --fix ./",
     "start": "node index.js",
     "test": "./node_modules/mocha/bin/mocha test"
@@ -17,11 +18,18 @@
     "eslint": "^7.1.0",
     "eslint-plugin-editorconfig": "^2.1.2",
     "eslint-plugin-mocha": "^7.0.0",
+    "husky": "^4.2.5",
     "mocha": "^7.2.0",
     "supertest": "^4.0.2"
   },
   "engines": {
     "node": ">=10.0.0",
     "npm": ">=6.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run check",
+      "pre-push": "npm run check"
+    }
   }
 }
